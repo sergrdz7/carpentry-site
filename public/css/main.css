@@ -1,0 +1,126 @@
+/* color: */
+/* --primary: #B16F14; */
+/* 54442B */
+/* https://coolors.co/3d270c-4c311d-7a5b3e-a9714b-d18955 */
+/* --primary: #54452F; */
+
+/* Other Colors */
+/* #553912
+#C38323
+#FFF8F0
+#DFE0DF
+#B8A99A */
+/*---------------*/
+/* GLOBAL CLASSES*/
+/*---------------*/
+:root {
+  --primary: #7A5B3E;
+  --secondary: #553912;
+  --alternative: white;
+  --font-size-heading: 60px;
+  --font-size-subheading: 50px;
+  --font-size-p: 20px;
+  --font-style-primary: thin;
+  --font-style-secondary:bold;
+}
+body {
+  background: white;
+  line-height: 1.5;
+  color: black;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+a:hover {
+  color: #999999;
+}
+.wrapper {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+
+button {
+  display: block;
+  padding: 15px 30px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-decoration: none;
+  white-space: nowrap;
+  border-radius: 3px;
+  cursor: pointer;
+  outline-style: none;
+  box-sizing: border-box;
+  transition: all 0.2s ease;
+  box-shadow: 0 20px 12px -15px rgba(120, 68, 0, .3);
+}
+
+button:hover,
+  &:active,
+  &:focus {
+    outline: 0;
+    transform: translateY(3px);
+    border-color: var(--secondary);
+}
+
+/*-----------*/
+/* HEADER */
+/*-----------*/
+header {
+  width: 100%;
+  height: 950px;
+  background-image: url(assets/images/hero-image.jpg);
+  background-color: var(--primary);
+
+}
+nav {
+  letter-spacing: 2px;
+  font-style: var(--font-style-primary);
+  height: 35px;
+  background-color: var(--primary);
+  color: var(--alternative);
+}
+nav img{
+  height: 100%;
+  padding: 0 20px;
+  margin-left: 0;
+  margin-right: auto;
+}
+nav div {
+  display: flex;
+  justify-content: flex-end;
+}
+.nav-item {
+  padding: 5px 20px;
+  display: inline-block;
+  flex-direction: row;
+  align-items: center;
+}
+
+/*------- HERO-------- */
+.hero {
+  border-radius: 5px;
+  margin-top: 200px;
+  text-align: center;
+  color: var(--primary);
+  background-color: rgba(255, 255, 255, 0.4);
+}
+.hero h1 {
+  font-weight: 900;
+  font-size: var(--font-size-heading);
+}
+.hero p {
+  font-style: italic;
+  font-size: 30px;
+  color: var(--primary);
+}
+.hero-btn {
+  color: white;
+  background-color: var(--primary);
+  margin: 0 auto;
+  margin-top: 20%;
+}
