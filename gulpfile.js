@@ -12,6 +12,8 @@ var sass = require('gulp-sass');
 var babel = require('gulp-babel');
 var del = require('del');
 var zip = require('gulp-zip');
+var injectPartials = require('gulp-inject-partials');
+
 
 //image compression plugins
 var imagemin = require('gulp-imagemin');
@@ -23,6 +25,8 @@ var imageminJpegRecompress = require('imagemin-jpeg-recompress');
 //FILE PATHS
 var SCRIPTS_PATH = 'public/scripts/**/*.js';
 var CSS_PATH = 'public/css/**/*.css';
+var HTML_PATH= 'public/*.html';
+var PARTIALS_PATH = 'public/partial/*.html';
 var DIST_PATH = 'public/dist';
 var IMAGES_PATH = 'public/images/**/*.{png,jpeg,jpg,svg,gif}';
 
@@ -80,6 +84,14 @@ gulp.task('styles', function(){
     .pipe(livereload());
 });
 
+//HTML
+gulp.task('html', function() {
+  return gulp.src(PARTIALS_PATH)
+  .pipe(injectPartials())
+  .pipe(gulp.dest(DIST_PATH))
+
+});
+
 //SCRIPTS
 gulp.task('scripts', function(){
   console.log('running scripts');
@@ -134,7 +146,7 @@ gulp.task('clean', function() {
 })
 
 //DEFAULT
-gulp.task('default',['clean','images','styles','scripts'], function(){
+gulp.task('default',['clean','images','styles','scripts','html'], function(){
   console.log('Starting default task');
 });
 
@@ -156,4 +168,5 @@ gulp.task('watch',['default'], function(){
   // watch sass files
   gulp.watch('public/scss/**/*.scss', ['styles']);
   // gulp.watch('public/index.html', ['html']);
+  gulp.watch([HTML_PATH, PARTIALS_PATH],['html']);
 });

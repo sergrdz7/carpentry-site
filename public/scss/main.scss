@@ -2,6 +2,8 @@
 @import "./1-base/reset";
 @import "./1-base/colors";
 @import "./1-base/typography";
+@import "./1-base/base";
+
 
 @import "./2-modules/all";
 @import "./2-modules/buttons";
@@ -9,6 +11,7 @@
 @import "./2-modules/navigation";
 
 @import "./3-layout/header";
+@import "./3-layout/content-1";
 @import "./3-layout/footer";
 
 @import "./4-pages/home";

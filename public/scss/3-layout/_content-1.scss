@@ -1,0 +1,22 @@
+.content-1 {
+  margin-top: 70px;
+  height: 800px;
+}
+.content-1 p {
+  margin-top: 30px;
+  margin-bottom: 40px;
+  text-align: center;
+
+}
+.image-grid {
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.image-grid-item img {
+  flex-direction: row;
+  width: 420px;
+  height: 300px;
+  margin: 10px;
+}

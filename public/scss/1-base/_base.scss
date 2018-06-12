@@ -1,0 +1,49 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inderit;
+}
+
+body {
+  //Set background to custom image and Color
+  background-color:$alternative-color;
+  font-size: $font-size-regular;
+  color: $secondary-color;
+
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+a:hover {
+  color: #999999;
+}
+
+h2 {
+  font-size: $font-size-xlarge;
+  letter-spacing: 5px;
+  text-align: center;
+  color: $secondary-color;
+}
+
+p{
+  font-size: $font-size-regular;
+}
+
+.wrapper {
+  width: 90%;
+  max-width: 980px;
+  margin: 0 auto;
+}
+
+.lg-wrapper {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto; 
+
+}
