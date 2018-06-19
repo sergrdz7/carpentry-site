@@ -31,6 +31,10 @@ h2 {
   color: $secondary-color;
 }
 
+h3{
+  font-size: $font-size-large;
+}
+
 p{
   font-size: $font-size-regular;
 }
@@ -43,7 +47,7 @@ p{
 
 .lg-wrapper {
   width: 90%;
-  max-width: 1200px;
-  margin: 0 auto; 
+  max-width: 1310px;
+  margin: 0 auto;
 
 }
