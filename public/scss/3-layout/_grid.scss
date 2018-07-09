@@ -1,0 +1,20 @@
+.grid {
+  margin: 10px 0;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+
+}
+
+.grid-item {
+  flex-direction: row;
+  margin-top: 30px;
+  width: 550px;
+  height: 350px;
+}
+
+.grid-item img {
+  width: 550px;
+  height: 350px;
+}

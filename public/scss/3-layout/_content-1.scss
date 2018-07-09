@@ -8,32 +8,26 @@
   margin-top: 30px;
 }
 
-.grid {
-  margin: 10px 0;
-  text-align: center;
+.thumbnail-group-icon{
   display: flex;
   flex-direction: row;
+  margin-top: 70px;
   justify-content: space-around;
-
-}
-.grid-item {
-  flex-direction: row;
-  margin-top: 30px;
-  width: 550px;
-  height: 350px;
+  height: 500px;
 }
 
-.grid-item img {
-  width: 550px;
-  height: 350px;
+.thumbnail-md-icon{
+  width: 300px;
+  height: 200px;
+  text-align: center;
 }
-
 
 .thumbnail-group{
   display: flex;
   flex-direction: row;
   margin-top: 70px;
   justify-content: space-around;
+
 }
 
 .thumbnail-md{
@@ -44,13 +38,4 @@
 .text-box-md {
   text-align:left;
   width: 350px;
-}
-
-.add-padding{
-
-}
-.content-2 {
-  display: flex;
-  height: 800px;
-  margin-top: 70px;
 }
